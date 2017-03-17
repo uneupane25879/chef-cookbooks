@@ -1,0 +1,8 @@
+<VitualHost *:80>
+	ServerAdmin aamirahmad170@gmail.com
+	DocumentRoot <%= @doc_root %>
+	<Directory <%= @doc_root %>>
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VitualHost>
